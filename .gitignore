@@ -1,3 +1,23 @@
+# --- Tailwind a npm související soubory ---
+
+# Ignorování složky node_modules (npm závislosti)
+node_modules/
+
+# Ignorování generovaných souborů CSS (output.css)
+**/static/css/output.css
+
+# Ignorování souboru pro Tailwind config
+tailwind.config.js
+
+# Ignorování souboru package-lock.json
+package-lock.json
+
+# Ignorování npm debug log souborů
+npm-debug.log
+yarn-error.log
+
+# --- Python související soubory ---
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
