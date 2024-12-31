@@ -2,6 +2,14 @@
 
 {%block data%}
 <form method="POST">
-    
+    <label for="vendor">Vendor:</label><br>
+    <input type="text" name="vendor" id="vendor" required><br>
+
+    <label for="code">Code:</label><br>
+    <input type="text" name="code" id="code" required><br>
+
+    <label for="expiration">Expiration:</label><br>
+    <input type="date" name="expiration" id="expiration" required><br>
+    <button type="submit">Publis</button>
 </form>
 {%endblock%}

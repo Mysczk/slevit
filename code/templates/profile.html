@@ -1,0 +1,24 @@
+{%extends "template.html"%}
+
+{%block data%}
+    <h1>Profile</h1>
+    <p>Username: {{user.username}}</p>
+    <form action="/changeUsNa/" method="post">
+        <label for="password">Username:</label><br>
+        <input type="text" id="newusername" name="newusername" required><br>
+        <button name="changeUsNa" type="submit" >Submit</button>
+    </form>
+    <p>Email: {{user.email}}</p>
+    <form action="/deleteAcc/"></form>
+    <br>
+    <h2>Change Password</h2>
+    <form action="/changePwd/" method="post">
+        <label for="password">Password:</label><br>
+        <input type="password" id="newpassword" name="newpassword" required><br>
+        <button name="changePwd" type="submit" >Submit</button>
+    </form>
+    <h2>Codes</h2>
+    {%for code in codes%}
+        <div>{{code.vendor}} - {{code.code}} - {{co de.expiration}}</div>
+    {%endfor%}
+{%endblock%}
